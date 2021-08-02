@@ -1,0 +1,38 @@
+Application Usage by User
+
+After opening the Healthy Faces folder through the Visual Studio Code compiler and starting the xampp 
+database; to see the system by the user, you should run UserLogin.py codes. In case you don't have 
+an existing registration in the system, you fill out the registration form by clicking the Register Button, 
+and when you click on the Submit button, the camera opens and you are expected to take the photo 
+required for face recognition. While taking shots with the "space" key of the keyboard, you can exit 
+with the "esc" key. Then your registration process is defined and you are automatically redirected to 
+UserLogin.py page. You can log in to the system with the Sign In Button by entering your user
+information.
+Since application usage by the user is not one of the main goals of this project, the user-side interface 
+(UserLogin.py, UserPage.py, UserRegister.py, and Camera4Reg.py) is presented only as a sketch. 
+
+Application Usage by Controller
+
+An instant active camera is opened in code class, where security and control processes are 
+provided, which defined as the control camera, which is the main target. This camera is intended to 
+be placed in places where control is required such as shopping malls and closed areas. This camera will 
+always be active; recognize the faces of users who have registered in the system and show whether 
+they are wearing masks, their names and risk status. It can perform face recognition and detect 
+operation with or without a mask. When runing the real_time_face_recognition.py file, need to 
+take shots and save your faces in order to register in the folder that you defined as image database. After 
+the camera is turned on, complete the face recording process (image save) by pressing the "s" key 
+on the keyboard. Then you should write the name and risk status of the image by image_name.jpg as Rename. 
+When the real_time_face_recognition.py class is running again in order to see the 
+results after changing saved image's name, it will now be sufficient for the information to be displayed on the screen with 
+an active camera and the face of the person in the image database.
+Wanted to show the FPS value in the upper left corner of the Controller Cam, because it may be a 
+necessary information from time to time, since it will work for a very long time in the areas to be used.
+To exit the controller camera interface, simply press the letter "q" on your keyboard.
+
+Footnote
+- Although the compilation time of real_time_face_recognition.py codes varies according to 
+computer specifications, it takes an average of 2-3 minutes (this time may be longer during 
+the first run).
+- UserLogin.py, UserPage.py, UserRegister.py and Camera4Reg.py files were created as a 
+template/representation and were excluded from the face recognition program with the mask set as main target.
+
